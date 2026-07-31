@@ -4,6 +4,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { getPeople, getPublishedBlogs, getPublications, getResearchAreas } from "@/lib/content";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,6 +30,13 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const searchIndex = {
+    blogs: getPublishedBlogs(),
+    publications: getPublications(),
+    people: getPeople(),
+    areas: getResearchAreas(),
+  };
+
   return (
     <html
       lang="en"
@@ -39,7 +47,7 @@ export default function RootLayout({
           src="https://identity.netlify.com/v1/netlify-identity-widget.js"
           strategy="afterInteractive"
         />
-        <Navbar />
+        <Navbar searchIndex={searchIndex} />
         <main className="flex-1 pt-20">{children}</main>
         <Footer />
       </body>

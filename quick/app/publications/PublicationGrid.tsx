@@ -2,8 +2,7 @@
 
 import Image from "next/image";
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
-import { useMemo, useState } from "react";
-import type { Publication } from "@/lib/types";
+import { useMemo, useState } from "react";import type { Publication } from "@/lib/types";
 import { assetUrl, papersFolder } from "@/lib/assets";
 
 export default function PublicationGrid({ items }: { items: Publication[] }) {
@@ -13,8 +12,19 @@ export default function PublicationGrid({ items }: { items: Publication[] }) {
     [items],
   );
   const [year, setYear] = useState<number | "all">("all");
+  const [query, setQuery] = useState("");
 
-  const filtered = year === "all" ? items : items.filter((p) => p.year === year);
+  const filtered = useMemo(() => {
+    const q = query.trim().toLowerCase();
+    return items.filter((pub) => {
+      if (year !== "all" && pub.year !== year) return false;
+      if (!q) return true;
+      return [pub.title, pub.venue, pub.authors.join(" "), pub.abstract]
+        .join(" ")
+        .toLowerCase()
+        .includes(q);
+    });
+  }, [items, year, query]);
 
   return (
     <>
@@ -42,6 +52,29 @@ export default function PublicationGrid({ items }: { items: Publication[] }) {
             {y}
           </button>
         ))}
+        <div className="glass ml-auto flex w-full items-center gap-3 rounded-full px-4 py-2 sm:w-auto">
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            className="shrink-0 text-slate-500"
+            aria-hidden="true"
+          >
+            <circle cx="11" cy="11" r="8" />
+            <path d="m21 21-4.3-4.3" />
+          </svg>
+          <input
+            type="search"
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
+            placeholder="Search by title, author, venue…"
+            className="w-full bg-transparent text-sm text-white placeholder-slate-500 outline-none sm:w-64"
+            aria-label="Search publications"
+          />
+        </div>
       </div>
 
       <motion.ul layout className="space-y-6">

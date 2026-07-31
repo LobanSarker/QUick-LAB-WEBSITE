@@ -133,7 +133,7 @@ export default function Home() {
       </section>
 
       {/* Contact */}
-      <section className="mx-auto max-w-6xl px-6 pt-20 text-center">
+      <section id="contact" className="mx-auto max-w-6xl px-6 pt-20 text-center">
         <Reveal>
           <h2 className="text-2xl font-bold tracking-tight sm:text-3xl">
             Get in <span className="text-cyan-glow">Touch</span>

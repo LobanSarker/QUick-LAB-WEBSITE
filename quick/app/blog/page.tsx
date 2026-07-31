@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Reveal from "@/components/Reveal";
-import BlogCard from "@/components/BlogCard";
+import BlogList from "@/components/BlogList";
 import { getPublishedBlogs } from "@/lib/content";
 import type { BlogPost } from "@/lib/types";
 
@@ -37,12 +37,8 @@ export default function BlogPage() {
             </p>
           </Reveal>
         ) : (
-          <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {posts.map((post, i) => (
-              <Reveal key={post.id} delay={(i % 3) * 0.08}>
-                <BlogCard post={post} />
-              </Reveal>
-            ))}
+          <div className="mt-14">
+            <BlogList posts={posts} />
           </div>
         )}
       </div>
