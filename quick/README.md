@@ -102,7 +102,8 @@ npx serve out        # preview the static site locally
 
 1. Push this folder to a GitHub/GitLab repo.
 2. In Netlify: **Add new site → Import an existing project** and pick the repo.
-3. Build settings are auto-detected from `netlify.toml`:
+3. Build settings are auto-detected from `netlify.toml` at the repo root
+   (`base = "quick"`):
    - Build command: `npm run build`
    - Publish directory: `out`
 4. Deploy. The newsletter form is detected automatically and appears under
@@ -110,7 +111,8 @@ npx serve out        # preview the static site locally
 5. Enable the admin dashboard — follow the steps in the
    [Admin dashboard](#admin-dashboard-decap-cms) section.
 
-The `netlify.toml` already configures Node 22 for the build.
+The `netlify.toml` at the repo root already configures the `quick/` base
+directory and Node 22 for the build.
 
 ## Note on the original architecture
 
