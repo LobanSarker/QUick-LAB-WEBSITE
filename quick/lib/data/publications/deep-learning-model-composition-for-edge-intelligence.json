@@ -1,0 +1,12 @@
+{
+  "title": "Deep Learning Model Composition for Edge Intelligence",
+  "venue": "IEEE SMARTCOMP 2022",
+  "year": 2022,
+  "authors": [
+    "Nimi, S. T."
+  ],
+  "abstract": "A study of deep learning model composition strategies that enable multiple inference tasks to share computation efficiently on resource-constrained edge devices.",
+  "doi": null,
+  "link": "https://mailmissouri-my.sharepoint.com/:f:/g/personal/snvb8_umsystem_edu/EkPJqOYjRJVPgLMnKJLLRDoBbRASCxuFMz4qprB1e2KC_g?e=kfQpbN",
+  "image": "/images/publications/dl-model-composition.png"
+}

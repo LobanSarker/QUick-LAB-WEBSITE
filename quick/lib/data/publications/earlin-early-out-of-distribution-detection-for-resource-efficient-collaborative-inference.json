@@ -1,0 +1,15 @@
+{
+  "title": "EARLIN: Early Out-of-Distribution Detection for Resource-Efficient Collaborative Inference",
+  "venue": "ECML-PKDD 2021",
+  "year": 2021,
+  "authors": [
+    "Nimi, S. T.",
+    "Arefeen, A.",
+    "Uddin, Y. S.",
+    "Lee, Y."
+  ],
+  "abstract": "EARLIN performs early out-of-distribution detection to make collaborative inference between edge devices and the cloud more resource-efficient.",
+  "doi": null,
+  "link": "https://mailmissouri-my.sharepoint.com/:f:/g/personal/snvb8_umsystem_edu/EkPJqOYjRJVPgLMnKJLLRDoBbRASCxuFMz4qprB1e2KC_g?e=kfQpbN",
+  "image": "/images/publications/earlin.png"
+}

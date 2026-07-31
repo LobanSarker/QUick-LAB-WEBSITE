@@ -1,0 +1,16 @@
+{
+  "title": "FactionFormer: Context-Driven Collaborative Vision Transformer Models for Edge Intelligence",
+  "venue": "IEEE SMARTCOMP 2023",
+  "year": 2023,
+  "authors": [
+    "Nimi, S. T.",
+    "Arefeen, A.",
+    "Uddin, Y. S.",
+    "Debnath, B.",
+    "Chakradhar, S."
+  ],
+  "abstract": "A context-driven collaborative vision transformer framework that enables efficient edge intelligence through faction-based model partitioning and collaborative inference.",
+  "doi": null,
+  "link": "https://mailmissouri-my.sharepoint.com/:f:/g/personal/snvb8_umsystem_edu/EkPJqOYjRJVPgLMnKJLLRDoBbRASCxuFMz4qprB1e2KC_g?e=kfQpbN",
+  "image": "/images/publications/factionformer.jpg"
+}

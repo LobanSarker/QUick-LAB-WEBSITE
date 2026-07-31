@@ -1,0 +1,14 @@
+{
+  "title": "Uncovering the Best Resources for Quantum Deep Learning: Essential Tutorials, Blogs, and Books",
+  "slug": "essential-tutorials-blogs-and-books-to-learn-quantum-deep-learning",
+  "excerpt": "A curated list of tutorials, blogs, textbooks and codebases to get started with quantum deep learning.",
+  "cover": "/images/blog/qdl-resources.webp",
+  "tags": [
+    "Resources",
+    "Quantum Deep Learning"
+  ],
+  "content": "Quantum deep learning sits at the intersection of quantum computing and neural networks. Here is my curated list of resources to learn it systematically.\n\n## My Resources\n\n- **LinkedIn Group**: [Quantum Deep Learning Community](https://www.linkedin.com/groups/14619021/)\n- **Online Lecture Resources**: [Google Drive folder](https://drive.google.com/drive/folders/1BBSiUUG8Wv9sOUuTxsw85wxnWz_ZAErM?usp=sharing)\n\n## Blogs\n\n- [Quantum Deep Learning: A Quick Guide to Quantum Convolutional Neural Networks](https://medium.com/towards-data-science/quantum-deep-learning-a-quick-guide-to-quantum-convolutional-neural-networks-d65284e21fc4) — Towards Data Science\n\n## Textbooks\n\n- [Quantum Computation and Quantum Information](http://ndl.ethernet.edu.et/bitstream/123456789/73371/1/320.pdf) — Nielsen & Chuang\n- [Quantum Computation and Quantum Information (PDF)](https://profmcruz.wordpress.com/wp-content/uploads/2017/08/quantum-computation-and-quantum-information-nielsen-chuang.pdf)\n\n## Codebase\n\n- [Hands-on Colab notebook](https://colab.research.google.com/drive/1hBrlPvLdz4-ais3mBNVrUCNFM0Zv9A6M?usp=sharing)\n\nHappy learning!",
+  "status": "PUBLISHED",
+  "createdAt": "2023-08-02",
+  "authorName": "Sumaiya Tabassum"
+}

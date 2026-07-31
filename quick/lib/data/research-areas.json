@@ -1,0 +1,68 @@
+[
+  {
+    "name": "Supervised Quantum Computing",
+    "description": "Quantum algorithms and circuits for supervised machine learning tasks, including quantum kernel methods and variational classifiers.",
+    "image": "/images/research/supervised-quantum-computing.jpg",
+    "sortOrder": 0
+  },
+  {
+    "name": "Deep Learning",
+    "description": "Artificial neural networks and deep learning architectures for large-scale, data-driven knowledge discovery.",
+    "image": "/images/research/deep-learning.jpg",
+    "sortOrder": 1
+  },
+  {
+    "name": "Molecular Machine Learning",
+    "description": "Computational quantum chemistry and machine learning for molecular property prediction and drug discovery.",
+    "image": "/images/research/molecular-ml.jpg",
+    "sortOrder": 2
+  },
+  {
+    "name": "Edge Computing",
+    "description": "Lightweight, collaborative and resource-efficient deep models for intelligent edge devices.",
+    "image": "/images/research/edge-computing.jpg",
+    "sortOrder": 3
+  },
+  {
+    "name": "Industrial Informatics",
+    "description": "Intelligent computation for industrial systems, automation and manufacturing informatics.",
+    "image": "/images/research/industrial-informatics.jpg",
+    "sortOrder": 4
+  },
+  {
+    "name": "Chemometrics",
+    "description": "Multivariate data analysis and machine learning applied to chemical measurement systems.",
+    "image": "/images/research/chemometrics.jpg",
+    "sortOrder": 5
+  },
+  {
+    "name": "Mental Health Informatics",
+    "description": "Computational approaches for mental health assessment, monitoring and intervention.",
+    "image": "/images/research/mental-health-informatics.jpg",
+    "sortOrder": 6
+  },
+  {
+    "name": "Computational Neuroscience",
+    "description": "Neural network models inspired by and applied to the study of the brain and cognition.",
+    "image": "/images/research/computational-neuroscience.jpg",
+    "sortOrder": 7
+  },
+  {
+    "name": "Theoretical Quantum Machine Learning",
+    "description": "Foundations of quantum machine learning: theory, complexity and new quantum learning models.",
+    "image": "/images/research/theoretical-qml.jpg",
+    "sortOrder": 8
+  },
+  {
+    "name": "Recommender System",
+    "description": "Personalized recommendation algorithms from collaborative filtering to deep and quantum-enhanced models.",
+    "image": "/images/research/recommender-system.jpg",
+    "sortOrder": 9
+  },
+  {
+    "name": "Computer Vision",
+    "description": "Deep computer vision for classification, detection, segmentation and earth observation.",
+    "image": "/images/research/computer-vision.jpg",
+    "sortOrder": 10
+  }
+]

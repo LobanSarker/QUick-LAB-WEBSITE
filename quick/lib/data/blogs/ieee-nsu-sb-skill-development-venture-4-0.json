@@ -1,0 +1,14 @@
+{
+  "title": "IEEE NSU SB Skill Development Venture 4.0",
+  "slug": "ieee-nsu-sb-skill-development-venture-4-0",
+  "excerpt": "Presentation, dataset and notebook resources from the IEEE NSU SB Skill Development Venture 4.0 session.",
+  "cover": "/images/blog/ieee-venture.jpg",
+  "tags": [
+    "Workshop",
+    "Resources"
+  ],
+  "content": "We had a great session at the **IEEE NSU SB Skill Development Venture 4.0** on quantum machine learning. All the session resources are shared below for anyone who wants to dive deeper.\n\n## Session Resources\n\n- **Presentation**: [IEEE_NSU_SB.pptx](https://mailmissouri-my.sharepoint.com/:p:/g/personal/snvb8_umsystem_edu/ERBU-k2kqXxBvVvMk8FFEjUB5OI49R2ks7eZvMT1_LuoQQ?e=FPJRu8)\n- **Dataset**: [Google Drive](https://drive.google.com/file/d/1AMMQ2hBYMhG7TkH-2r7RBOC3h33KEHw5/view?usp=sharing)\n- **Notebook**: [Google Colab](https://colab.research.google.com/drive/1TfKaitZWDeSfTULQwXkiTC2f4vUaEBMl?usp=sharing)\n\nThank you to everyone who attended — stay tuned for more events from the QuICK research group!",
+  "status": "PUBLISHED",
+  "createdAt": "2024-11-01",
+  "authorName": "Sumaiya Tabassum"
+}

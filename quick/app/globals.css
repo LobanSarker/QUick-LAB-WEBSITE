@@ -1,0 +1,150 @@
+@import "tailwindcss";
+
+:root {
+  --background: #04040d;
+  --foreground: #e8e9f4;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+
+  --color-quantum-950: #04040d;
+  --color-quantum-900: #080818;
+  --color-quantum-850: #0b0b22;
+  --color-quantum-800: #10102e;
+  --color-quantum-700: #1a1a44;
+  --color-quantum-600: #26265f;
+
+  --color-cyan-glow: #22d3ee;
+  --color-violet-glow: #8b5cf6;
+  --color-magenta-glow: #e879f9;
+  --color-aurora: #5eead4;
+
+  --animate-aurora: aurora 18s ease-in-out infinite alternate;
+  --animate-float: float 9s ease-in-out infinite;
+  --animate-spin-slow: spin 24s linear infinite;
+  --animate-pulse-glow: pulse-glow 3.2s ease-in-out infinite;
+  --animate-marquee: marquee 32s linear infinite;
+  --animate-shimmer: shimmer 2.6s linear infinite;
+}
+
+@keyframes aurora {
+  0% {
+    background-position: 0% 50%;
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    background-position: 100% 50%;
+    filter: hue-rotate(40deg);
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-14px);
+  }
+}
+
+@keyframes pulse-glow {
+  0%,
+  100% {
+    opacity: 0.45;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes shimmer {
+  from {
+    background-position: -200% 0;
+  }
+  to {
+    background-position: 200% 0;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+}
+
+::selection {
+  background: rgba(139, 92, 246, 0.45);
+  color: #fff;
+}
+
+/* Aurora gradient background (also the WebGL fallback) */
+.aurora-bg {
+  background:
+    radial-gradient(60% 55% at 18% 18%, rgba(139, 92, 246, 0.16) 0%, transparent 60%),
+    radial-gradient(55% 50% at 82% 12%, rgba(34, 211, 238, 0.14) 0%, transparent 60%),
+    radial-gradient(60% 60% at 50% 92%, rgba(232, 121, 249, 0.12) 0%, transparent 60%),
+    var(--background);
+  background-size: 160% 160%;
+  animation: aurora 18s ease-in-out infinite alternate;
+}
+
+.glass {
+  background: rgba(16, 16, 46, 0.45);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(139, 92, 246, 0.18);
+}
+
+.glow-text {
+  text-shadow:
+    0 0 22px rgba(139, 92, 246, 0.55),
+    0 0 60px rgba(34, 211, 238, 0.3);
+}
+
+.grid-bg {
+  background-image:
+    linear-gradient(rgba(139, 92, 246, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(139, 92, 246, 0.06) 1px, transparent 1px);
+  background-size: 56px 56px;
+}
+
+.text-shimmer {
+  background: linear-gradient(
+    110deg,
+    #22d3ee 20%,
+    #e879f9 40%,
+    #8b5cf6 55%,
+    #22d3ee 80%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: shimmer 6s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .aurora-bg,
+  .text-shimmer,
+  .animate-aurora,
+  .animate-float,
+  .animate-spin-slow,
+  .animate-pulse-glow,
+  .animate-marquee {
+    animation: none !important;
+  }
+}

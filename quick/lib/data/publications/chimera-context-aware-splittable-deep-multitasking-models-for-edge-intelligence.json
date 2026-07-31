@@ -1,0 +1,16 @@
+{
+  "title": "Chimera: Context-Aware Splittable Deep Multitasking Models for Edge Intelligence",
+  "venue": "IEEE SMARTCOMP 2022",
+  "year": 2022,
+  "authors": [
+    "Nimi, S. T.",
+    "Arefeen, A.",
+    "Uddin, Y. S.",
+    "Debnath, B.",
+    "Chakradhar, S."
+  ],
+  "abstract": "Chimera introduces context-aware splittable deep multitasking models that balance accuracy and resource usage for edge intelligence applications.",
+  "doi": null,
+  "link": "https://mailmissouri-my.sharepoint.com/:f:/g/personal/snvb8_umsystem_edu/EkPJqOYjRJVPgLMnKJLLRDoBbRASCxuFMz4qprB1e2KC_g?e=kfQpbN",
+  "image": "/images/publications/chimera.png"
+}
