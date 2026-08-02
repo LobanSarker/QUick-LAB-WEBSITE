@@ -1,5 +1,5 @@
-name="QUICK-LAB-WEBSITE"
+name="quick-lab-website"
 compatibility_date="2026-08-02"
 
 [assert]
-directory = "./dist"
+directory = ".next"
