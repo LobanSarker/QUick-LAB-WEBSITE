@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "deploy": "next build && wrangler deploy",
+    "preview": "next build && wrangler dev"
   },
   "dependencies": {
     "@react-three/drei": "^10.7.7",

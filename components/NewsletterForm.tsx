@@ -4,6 +4,13 @@ import { useState, type FormEvent } from "react";
 
 const FORM_NAME = "newsletter";
 
+// Point this at any endpoint that accepts a POSTed subscription
+// (e.g. a Cloudflare Worker, Formspree, Resend). Configure it via
+// NEXT_PUBLIC_NEWSLETTER_ENDPOINT in `.env.local`, `wrangler.toml`
+// `[vars]`, or the Cloudflare dashboard. The endpoint should return
+// a 2xx status on success.
+const ENDPOINT = process.env.NEXT_PUBLIC_NEWSLETTER_ENDPOINT;
+
 export default function NewsletterForm() {
   const [email, setEmail] = useState("");
   const [state, setState] = useState<"idle" | "loading" | "done" | "error">(
@@ -11,22 +18,36 @@ export default function NewsletterForm() {
   );
   const [message, setMessage] = useState("");
 
-  async function onSubmit(e: FormEvent) {
+  async function onSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
     if (!email) return;
+
+    const data = new FormData(e.currentTarget);
+    // Honeypot: silently "succeed" for bots so they learn nothing.
+    if (data.get("bot-field")) {
+      setState("done");
+      setMessage("Subscribed! Welcome to the QuICK newsletter.");
+      setEmail("");
+      return;
+    }
+
+    if (!ENDPOINT) {
+      setState("error");
+      setMessage(
+        "Newsletter signup isn't set up yet — please reach us through the contact links below.",
+      );
+      return;
+    }
+
     setState("loading");
     try {
-      const body = new URLSearchParams({ "form-name": FORM_NAME, email });
-      const res = await fetch("/", {
+      const res = await fetch(ENDPOINT, {
         method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: body.toString(),
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ "form-name": FORM_NAME, email }),
       });
-      if (!res.ok && res.status !== 200) {
-        // Netlify replies with a redirect after capturing the submission
-        if (res.type !== "opaqueredirect" && !res.url) {
-          throw new Error(`Submission failed (${res.status})`);
-        }
+      if (!res.ok) {
+        throw new Error(`Submission failed (${res.status})`);
       }
       setState("done");
       setMessage("Subscribed! Welcome to the QuICK newsletter.");
@@ -43,15 +64,12 @@ export default function NewsletterForm() {
     <form
       onSubmit={onSubmit}
       name={FORM_NAME}
-      data-netlify="true"
-      data-netlify-honeypot="bot-field"
       method="post"
       className="w-full max-w-md"
     >
-      <input type="hidden" name="form-name" value={FORM_NAME} />
       <p className="hidden">
         <label>
-          Don&apos;t fill this out: <input name="bot-field" />
+          Don&apos;t fill this out: <input name="bot-field" tabIndex={-1} />
         </label>
       </p>
       <div className="glass flex items-center gap-2 rounded-full p-1.5">
