@@ -26,6 +26,7 @@ interface PersonRecord {
   institution: string;
   role: string | null;
   profileUrl: string | null;
+  email: string | null;
   sortOrder: number;
 }
 
