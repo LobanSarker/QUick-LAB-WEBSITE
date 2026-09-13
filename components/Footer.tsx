@@ -41,7 +41,6 @@ export default function Footer() {
               { href: "/research", label: "Research Concentration" },
               { href: "/people", label: "People" },
               { href: "/publications", label: "Publications" },
-              { href: "/blog", label: "Blog" },
             ].map((l) => (
               <li key={l.href}>
                 <Link

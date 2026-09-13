@@ -12,7 +12,6 @@ const links = [
   { href: "/research", label: "Research" },
   { href: "/people", label: "People" },
   { href: "/publications", label: "Publications" },
-  { href: "/blog", label: "Blog" },
   { href: "/#contact", label: "Contact" },
 ];
 
@@ -64,9 +63,8 @@ export default function Navbar({ searchIndex }: { searchIndex: SearchIndex }) {
               <li key={link.href} className="relative">
                 <Link
                   href={link.href}
-                  className={`relative z-10 block rounded-full px-3 py-1.5 text-sm font-medium transition-colors sm:px-4 ${
-                    active ? "text-white" : "text-slate-300 hover:text-white"
-                  }`}
+                  className={`relative z-10 block rounded-full px-3 py-1.5 text-sm font-medium transition-colors sm:px-4 ${active ? "text-white" : "text-slate-300 hover:text-white"
+                    }`}
                 >
                   {link.label}
                   {active && (

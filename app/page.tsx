@@ -3,10 +3,9 @@ import type { Metadata } from "next";
 import QuantumHero from "@/components/hero/QuantumHero";
 import MagneticButton from "@/components/MagneticButton";
 import ResearchMarquee from "@/components/ResearchMarquee";
-import BlogCard from "@/components/BlogCard";
 import Reveal from "@/components/Reveal";
 import NewsletterForm from "@/components/NewsletterForm";
-import { getPublishedBlogs, getResearchAreas } from "@/lib/content";
+import { getResearchAreas } from "@/lib/content";
 
 export const metadata: Metadata = {
   title: "QuICK Research Group",
@@ -15,7 +14,6 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
-  const blogs = getPublishedBlogs().slice(0, 3);
   const areas = getResearchAreas();
 
   return (
@@ -83,35 +81,7 @@ export default function Home() {
         <ResearchMarquee areas={areas} />
       </section>
 
-      {/* Latest blogs */}
-      <section className="mx-auto max-w-6xl px-6 pt-24">
-        <Reveal>
-          <div className="mb-10 flex items-end justify-between gap-4">
-            <div>
-              <p className="text-xs font-semibold uppercase tracking-[0.25em] text-violet-glow">
-                Insights
-              </p>
-              <h2 className="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">
-                Latest <span className="text-cyan-glow">Blogs</span>
-              </h2>
-            </div>
-            <Link
-              href="/blog"
-              className="group hidden items-center gap-2 text-sm font-medium text-slate-400 transition-colors hover:text-cyan-glow sm:flex"
-            >
-              View all posts
-              <span className="transition-transform group-hover:translate-x-1">→</span>
-            </Link>
-          </div>
-        </Reveal>
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {blogs.map((post, i) => (
-            <Reveal key={post.id} delay={i * 0.08}>
-              <BlogCard post={post} />
-            </Reveal>
-          ))}
-        </div>
-      </section>
+
 
       {/* Newsletter + contact */}
       <section className="relative mx-auto max-w-6xl px-6 pt-28">
