@@ -16,12 +16,26 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.quickresearchgroup.com"),
   title: {
     default: "QuICK Research Group",
     template: "%s · QuICK Research Group",
   },
   description:
     "Quantum mechanics guided Intelligent Computation for Knowledge-based systems. We are QuICK to unlock knowledge at quantum speed.",
+  openGraph: {
+    title: "QuICK Research Group",
+    description:
+      "Quantum mechanics guided Intelligent Computation for Knowledge-based systems. We are QuICK to unlock knowledge at quantum speed.",
+    images: [{ url: "/images/logo.jpg" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "QuICK Research Group",
+    description:
+      "Quantum mechanics guided Intelligent Computation for Knowledge-based systems. We are QuICK to unlock knowledge at quantum speed.",
+    images: ["/images/logo.jpg"],
+  },
 };
 
 export default function RootLayout({
