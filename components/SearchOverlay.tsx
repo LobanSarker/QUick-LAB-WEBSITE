@@ -3,10 +3,9 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import Link from "next/link";
-import type { BlogPost, Person, Publication, ResearchArea } from "@/lib/types";
+import type { Person, Publication, ResearchArea } from "@/lib/types";
 
 export interface SearchIndex {
-  blogs: BlogPost[];
   publications: Publication[];
   people: Person[];
   areas: ResearchArea[];
@@ -64,15 +63,7 @@ export default function SearchOverlay({
     if (!q) return [];
     const results: ResultGroup[] = [];
 
-    const blogItems = index.blogs
-      .filter((b) => matches(q, b.title, b.excerpt, b.tags.join(" ")))
-      .slice(0, 4)
-      .map((b) => ({
-        title: b.title,
-        subtitle: b.excerpt,
-        href: `/blog/${b.slug}`,
-      }));
-    if (blogItems.length) results.push({ key: "blogs", label: "Blog Posts", items: blogItems });
+
 
     const pubItems = index.publications
       .filter((p) => matches(q, p.title, p.venue, p.authors.join(" "), p.abstract))
@@ -146,7 +137,7 @@ export default function SearchOverlay({
                 ref={inputRef}
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
-                placeholder="Search blogs, publications, people, research areas…"
+                placeholder="Search publications, people, research areas…"
                 className="w-full bg-transparent text-sm text-white placeholder-slate-500 outline-none"
                 aria-label="Search site"
               />
