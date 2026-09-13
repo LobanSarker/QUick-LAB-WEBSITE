@@ -94,19 +94,20 @@ export default function PeoplePage() {
                     <p className="mt-1.5 text-xs leading-5 text-slate-400">
                       {person.institution}
                     </p>
-                    {person.email ? (
-                      <a href={`mailto:${person.email}`}
-                        className="mt-3 inline-block rounded-full bg-violet-glow/15 px-2.5 py-0.5 text-[11px] font-medium text-violet-300 transition-colors hover:text-cyan-glow"
-                      >
-                        {person.email}
-                      </a>
-                    ) : (
-                      person.role && (
-                        <span className="mt-3 inline-block rounded-full bg-violet-glow/15 px-2.5 py-0.5 text-[11px] font-medium text-violet-300">
+                    <div className="mt-3 flex flex-wrap items-center gap-2">
+                      {person.role && person.role !== "Research Assistant" && (
+                        <span className="inline-block rounded-full bg-violet-glow/15 px-2.5 py-0.5 text-[11px] font-medium text-violet-300">
                           {person.role}
                         </span>
-                      )
-                    )}
+                      )}
+                      {person.email && (
+                        <a href={`mailto:${person.email}`}
+                          className="inline-block rounded-full bg-violet-glow/15 px-2.5 py-0.5 text-[11px] font-medium text-violet-300 transition-colors hover:text-cyan-glow"
+                        >
+                          {person.email}
+                        </a>
+                      )}
+                    </div>
                   </div>
                 </Reveal>
               ))}

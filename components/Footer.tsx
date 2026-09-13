@@ -2,11 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 const emails = [
-  { label: "sumtamnimi@gmail.com", href: "mailto:sumtamnimi@gmail.com" },
-  {
-    label: "sumaiya@cse.uiu.ac.bd",
-    href: "mailto:sumaiya@cse.uiu.ac.bd",
-  },
+  { label: "sumaiya.nimi@northsouth.edu", href: "mailto:sumaiya.nimi@northsouth.edu" },
 ];
 
 export default function Footer() {

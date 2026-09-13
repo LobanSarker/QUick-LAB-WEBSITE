@@ -113,11 +113,7 @@ export default function Home() {
           </p>
           <div className="mt-6 flex flex-wrap items-center justify-center gap-4">
             {[
-              { label: "sumtamnimi@gmail.com", href: "mailto:sumtamnimi@gmail.com" },
-              {
-                label: "sumaiya@cse.uiu.ac.bd",
-                href: "mailto:sumaiya@cse.uiu.ac.bd",
-              },
+              { label: "sumaiya.nimi@northsouth.edu", href: "mailto:sumaiya.nimi@northsouth.edu" },
             ].map((email) => (
               <a
                 key={email.href}
