@@ -1,0 +1,14 @@
+{
+    "title": "KrishokChat: A Provenance-Traceable Multi-Task Bengali Agricultural Benchmark with Safety-Critical Chemical Advisory",
+    "venue": "arXiv preprint",
+    "year": 2026,
+    "authors": [
+        "Khan Raiyan Ibne Reza",
+        "Sumaiya Tabassum Nimi",
+        "Omar Ibne Shahid"
+    ],
+    "abstract": "KrishokChat is a citation-grounded Bengali agricultural benchmark with traceable sources, real farmer queries, and explicit evaluation of safety in chemical advisory.",
+    "doi": null,
+    "link": "https://arxiv.org/abs/2606.29243",
+    "image": "/images/publications/krishokchat.png"
+}

@@ -1,0 +1,14 @@
+{
+    "title": "Where Does Retrieval Fail? Evaluating RAG Architectures for Agricultural Advisory",
+    "venue": "arXiv preprint",
+    "year": 2026,
+    "authors": [
+        "Khan Raiyan Ibne Reza",
+        "Sanjana Aktar Maria",
+        "Sumaiya Tabassum Nimi"
+    ],
+    "abstract": "Evaluates RAG architectures for Bengali agricultural advisory, revealing how retrieval performance varies sharply across colloquial farmer queries, formal terminology, and language conditions.",
+    "doi": null,
+    "link": "https://arxiv.org/abs/2608.14886",
+    "image": "/images/publications/retrieval-fail-agriculture.png"
+}

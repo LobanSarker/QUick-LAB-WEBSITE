@@ -1,0 +1,17 @@
+{
+    "title": "QuanTiMedAI: Quantum-Enhanced Time-Series Model guided by Agentic AI for Cardiac Arrest Mortality Prediction",
+    "venue": "arXiv preprint",
+    "year": 2026,
+    "authors": [
+        "Mutasim Fuad Sarker",
+        "Adiba Rahman Namira",
+        "Wafa Binte Alam",
+        "Md Adnan Arefeen",
+        "Mahzabeen Emu",
+        "Sumaiya Tabassum Nimi"
+    ],
+    "abstract": "Combines agentic AI-guided clinical feature selection with a compact quantum-enhanced time-series model for in-hospital cardiac arrest mortality prediction on MIMIC-IV.",
+    "doi": null,
+    "link": "https://arxiv.org/abs/2608.06294",
+    "image": "/images/publications/quantimedai.png"
+}

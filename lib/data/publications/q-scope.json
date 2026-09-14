@@ -1,0 +1,16 @@
+{
+    "title": "Q-SCOPE: Towards Characterizing Quantum State Geometry for Out-of-Distribution Prediction and Benchmark Evaluation",
+    "venue": "Quantum Machine Intelligence",
+    "year": 2026,
+    "authors": [
+        "Shahreen Sultana",
+        "Mutasim Fuad Sarker",
+        "Md Faiyaz Bin Younus",
+        "Md Adnan Arefeen",
+        "Sumaiya Tabassum Nimi"
+    ],
+    "abstract": "Explores quantum-state geometry and a fidelity-based scoring strategy to detect out-of-distribution inputs in hybrid classical-quantum neural network classifiers.",
+    "doi": "10.1007/s42484-026-00434-0",
+    "link": "https://doi.org/10.1007/s42484-026-00434-0",
+    "image": "/images/publications/q-scope.png"
+}

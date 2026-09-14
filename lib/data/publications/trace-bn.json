@@ -1,0 +1,16 @@
+{
+    "title": "TRACE-BN: Transferring Bangla-English Tutoring Behavior to a Sub-1B Offline Language Model",
+    "venue": "arXiv preprint",
+    "year": 2026,
+    "authors": [
+        "Khan Raiyan Ibne Reza",
+        "Sanjana Aktar Maria",
+        "Mohammad Tushar Abdullah",
+        "Asfee Bhuiyan Leen",
+        "Sumaiya Tabassum Nimi"
+    ],
+    "abstract": "TRACE-BN transfers structured Bangla-English tutoring behavior, including grammar explanations and learner-error diagnosis, to a compact offline language model for resource-constrained deployment.",
+    "doi": null,
+    "link": "https://arxiv.org/abs/2608.15223",
+    "image": "/images/publications/trace-bn.png"
+}
