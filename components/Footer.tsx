@@ -71,6 +71,25 @@ export default function Footer() {
       <div className="border-t border-white/5 py-5 text-center text-xs text-slate-500">
         © {new Date().getFullYear()} QuICK Research Group · Quantum mechanics
         guided Intelligent Computation for Knowledge-based systems
+        <br />
+        Developed by{" "}
+
+        <a href="https://www.linkedin.com/in/adiba-rahman-73a834351/"
+          target="_blank"
+          rel="noreferrer noopener"
+          className="text-slate-400 underline underline-offset-2 transition-colors hover:text-cyan-glow"
+        >
+          Adiba Rahman Namira
+        </a>{" "}
+        and{" "}
+
+        <a href="https://www.linkedin.com/in/mutasim-fuad-sarker-304925238/"
+          target="_blank"
+          rel="noreferrer noopener"
+          className="text-slate-400 underline underline-offset-2 transition-colors hover:text-cyan-glow"
+        >
+          Mutasim Fuad Sarker
+        </a>
       </div>
     </footer>
   );
