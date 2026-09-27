@@ -17,7 +17,7 @@ const ROLE_ORDER = [
 ];
 
 function roleGroup(role: string | null): string {
-  if (!role) return "Members";
+  if (!role) return "Researchers";
   if (role.startsWith("Graduate")) return "Graduate Research Assistant";
   if (role.startsWith("Undergraduate")) return "Undergraduate Research Assistant";
   if (role === "Research Assistant (CS)") return "Research Assistant";
