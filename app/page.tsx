@@ -24,9 +24,9 @@ export default function Home() {
         <div className="relative z-10 grid w-full items-center gap-10 lg:grid-cols-2">
           <div>
             <Reveal>
-              <p className="mb-4 inline-flex items-center gap-2 rounded-full border border-violet-glow/30 bg-violet-glow/10 px-4 py-1.5 text-xs font-medium uppercase tracking-widest text-violet-300">
+              <p className="mb-4 inline-flex items-center gap-2 rounded-full border border-violet-glow/30 bg-violet-glow/10 px-4 py-1.5 text-xs font-medium normal-case tracking-widest text-violet-300">
                 <span className="animate-pulse-glow h-1.5 w-1.5 rounded-full bg-cyan-glow" />
-                Quantum mechanics guided Intelligent Computation
+                Quantum mechanics guided Intelligent Computation for Knowledge-based systems
               </p>
             </Reveal>
             <Reveal delay={0.1}>
