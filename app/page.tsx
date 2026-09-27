@@ -38,7 +38,8 @@ export default function Home() {
             </Reveal>
             <Reveal delay={0.2}>
               <p className="mt-6 max-w-xl text-lg leading-8 text-slate-400">
-                The QuICK Research Group builds knowledge-based systems where
+                The QuICK Research Group builds Quantum mechanics guided
+                Intelligent Computation for Knowledge-based systems, where
                 quantum computing meets deep learning, edge intelligence and
                 computational science.
               </p>
