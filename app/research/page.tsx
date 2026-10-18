@@ -26,7 +26,7 @@ export default function ResearchPage() {
             Research <span className="text-shimmer">Concentration</span>
           </h1>
           <p className="mt-4 max-w-2xl text-base leading-7 text-slate-400">
-            Eleven research concentrations where quantum mechanics guides
+            Fourteen research concentrations where quantum mechanics guides
             intelligent computation for knowledge-based systems.
           </p>
         </Reveal>
