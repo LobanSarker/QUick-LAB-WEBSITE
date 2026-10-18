@@ -64,5 +64,23 @@
     "description": "Deep computer vision for classification, detection, segmentation and earth observation.",
     "image": "/images/research/computer-vision.jpg",
     "sortOrder": 10
+  },
+  {
+    "name": "AI for Environment",
+    "description": "Intelligent computation for environmental monitoring, climate analysis and sustainable resource management.",
+    "image": "/images/research/ai-for-environment.jpg",
+    "sortOrder": 11
+  },
+  {
+    "name": "Medical AI",
+    "description": "Intelligent systems for clinical prediction, medical imaging and healthcare decision support.",
+    "image": "/images/research/medical-ai.jpg",
+    "sortOrder": 12
+  },
+  {
+    "name": "Multimodal and Multi-Context AI",
+    "description": "Systems that integrate text, images, audio and other data sources and adapt across diverse contexts and domains.",
+    "image": "/images/research/multimodal-ai.jpg",
+    "sortOrder": 13
   }
 ]
